@@ -117,7 +117,7 @@ This project predicts regional peach production in South Korea by integrating **
 - Incorporate region-specific attributes: soil type, elevation, slope, cultivar distribution
 - Adopt a **rolling multi-year test strategy** for more realistic performance evaluation
 
----
+
 
 ## Reference
 
