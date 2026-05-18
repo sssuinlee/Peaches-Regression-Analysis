@@ -4,13 +4,13 @@
 > **Statistical Data Analysis — Team 6**
 > Shin Yu-bin · Lee Su-in · Heo Yeong-ryun
 
----
+
 
 ## Overview
 
 This project predicts regional peach production in South Korea by integrating **weather stress variables** (frost damage, heat waves, rainfall, solar radiation) with **region-specific fixed effects**. A machine learning approach was adopted to capture the nonlinear, multi-factor interactions that govern agricultural yield.
 
----
+
 
 ## Objectives
 
@@ -20,7 +20,7 @@ This project predicts regional peach production in South Korea by integrating **
 | Regional Characterization | Examine province-level production differences using regional dummy variables |
 | Yield Prediction | Build an ML-based peach production forecasting model |
 
----
+
 
 ## Data Sources
 
@@ -32,7 +32,7 @@ This project predicts regional peach production in South Korea by integrating **
 
 **Period:** 2015 – 2024 | **Scope:** 17 provinces/metropolitan cities
 
----
+
 
 ## Features
 
@@ -53,7 +53,7 @@ This project predicts regional peach production in South Korea by integrating **
 ### Peach yield
 - Since peach productions volumes vary greatly across provinces depending on the scale of cultivation, we use peach yield (ton/ha), the production divided by cultivation area, as the target variable to enable fair comparison.
 
----
+
 
 ## Data Preprocessing
 
@@ -62,7 +62,7 @@ This project predicts regional peach production in South Korea by integrating **
 - **Sejong City (2015–2018):** No observation station data → substituted with nearest Daejeon station data
 - **Feature engineering:** Log transformation (`log1p`) applied to frost stress and cultivation area to reduce right-skew; sunshine hours retained as-is to avoid distortion
 
----
+
 
 ## Modeling
 
@@ -89,7 +89,7 @@ This project predicts regional peach production in South Korea by integrating **
 
 ✅ **Random Forest** selected as the final model due to lower error on both metrics.
 
----
+
 
 ## Key Findings
 
@@ -99,7 +99,7 @@ This project predicts regional peach production in South Korea by integrating **
 - **Regional dummy variables** meaningfully improve prediction by encoding local factors (soil, cultivar, farming practices).
 - Production is governed by a **complex interaction** of area, weather, and regional characteristics — not any single factor.
 
----
+
 
 ## Limitations
 
@@ -108,7 +108,7 @@ This project predicts regional peach production in South Korea by integrating **
 - **Non-weather factors** (pest/disease pressure, labor, policy subsidies) are excluded
 - **Single test year (2024)** makes it difficult to robustly evaluate generalization performance
 
----
+
 
 ## Future Work
 
